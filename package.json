@@ -1,0 +1,30 @@
+{
+  "name": "@seyacat/baseconverter",
+  "version": "1.0.0",
+  "description": "Change string base",
+  "main": "index.js",
+  
+  "scripts": {
+    "test": "c8 --reporter=lcov mocha --reporter list",
+    "test:watch": "mocha --watch --parallel --reporter list"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seyacat/baseconverter.git"
+  },
+  "keywords": [
+    "base",
+    "converter"
+  ],
+  "author": "Santiago Andrade",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/seyacat/reactive/issues"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "eslint-plugin-prettier": "^4.2.1",
+    "mocha": "^10.2.0",
+    "prettier": "2.8.7"
+  }
+}

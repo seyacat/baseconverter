@@ -1,4 +1,4 @@
-const { convertBase, hex2bin } = require("../index");
+const { convertBase, hex2bin, sum, diff, max, min } = require("../index");
 const assert = require("assert");
 
 it("Baseconverter Basic", function () {
@@ -21,4 +21,16 @@ it("hex2bin Basic", function () {
   const result2 = convertBase(result, 2, 16);
   const expected2 = "123456789abcdef";
   assert.strictEqual(result2, expected2);
+
+  assert.strictEqual(sum("300", "50", 10), "350");
+  assert.strictEqual(sum("1111", "1111", 2), "11110");
+  assert.strictEqual(sum("ff", "ff", 16), "1fe");
+
+  assert.strictEqual(max("300", "50", 10), "300");
+  assert.strictEqual(min("300", "50", 16), "50");
+
+  assert.strictEqual(diff("100101100", "000110010", 2), "011111010");
+  //assert.strictEqual(diff("300", "50", 10), "250");
+  ///assert.strictEqual(diff("50", "300", 10), "-250");
+  //assert.strictEqual(diff("1000", "1", 2), "250");
 });

@@ -113,6 +113,7 @@ const min = (x, y, base) => {
     if (xbin[i] > ybin[i]) return y;
     if (xbin[i] < ybin[i]) return x;
   }
+  return null;
 };
 
 const sum2 = (x, y, base) => {
@@ -128,6 +129,13 @@ const sum2 = (x, y, base) => {
   return convertBase(ret, 2, base);
 };
 
+/**
+ *
+ * @param {string} x
+ * @param {string} y
+ * @param {number} base
+ * @returns {string}
+ */
 const sum = (x, y, base) => {
   const xbin = convertBase(x, base, 2)
     .split("")
@@ -160,6 +168,13 @@ const sumBinaryArray = (x, y) => {
   return ret;
 };
 
+/**
+ *
+ * @param {string} x
+ * @param {string} y
+ * @param {number} base
+ * @returns {string}
+ */
 const diff = (x, y, base) => {
   let xbin, ybin;
   let sign = "";

@@ -48,6 +48,7 @@ it("hex2bin Basic", function () {
     "[1,1,1,1,0]"
   );
 
+  assert.strictEqual(max("0100", "0010", 2), "0100");
   assert.strictEqual(max("300", "50", 10), "300");
   assert.strictEqual(min("300", "50", 16), "50");
 

@@ -1,9 +1,8 @@
 {
   "name": "@seyacat/baseconverter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Change string base",
   "main": "index.js",
-  
   "scripts": {
     "test": "c8 --reporter=lcov mocha --reporter list",
     "test:watch": "mocha --watch --parallel --reporter list"
